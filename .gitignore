@@ -1,0 +1,17 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# OS / Environment
+.DS_Store
+.env
+
+# Large Benchmark Run Dictionaries (Keep repo lightweight)
+# You can commit GBSR_PROJECT_REPORT.md and figures/ which contain all processed results
+runs_*/
+*.bak
+*.backup
+*.pre_*

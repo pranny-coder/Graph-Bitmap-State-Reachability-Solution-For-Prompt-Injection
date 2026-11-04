@@ -1,0 +1,7 @@
+benchmark,method,n_configurations,median_of_case_medians_ms,min_ms,max_ms,all_correct
+static,bitmap,60,2.474241,0.169324,12.522094,True
+static,gbsr,60,5.350983,0.307806,52.135589,True
+static,graph_traversal,60,2.380929,0.014566,181.996119,True
+dynamic,bitmap_recompute,16,7.598332,1.420235,27.090778,True
+dynamic,gbsr_incremental,16,0.495919,0.078117,7.004345,True
+dynamic,graph_traversal,16,13.051984,0.122134,437.436633,True

@@ -1,0 +1,53 @@
+Phase 2A supplement — dynamic label updates
+Oracle labels are known by construction; this tests update mechanics, not LLM semantic attribution.
+Sizes=[1000, 5000]; avg degree=[2, 8]; checkpoints=[10, 100]; source_events=8; seeds=[7, 17]; repeats=2
+n=  1000 m=   1997 deg= 2.00 cp=  10 updates=  8 seed=  7 graph_traversal      total=    0.122ms nodes=       704 edges=       624 correct=True
+n=  1000 m=   1997 deg= 2.00 cp=  10 updates=  8 seed=  7 bitmap_recompute     total=    1.523ms nodes=      8000 edges=     15976 correct=True
+n=  1000 m=   1997 deg= 2.00 cp=  10 updates=  8 seed=  7 gbsr_incremental     total=    0.078ms nodes=       272 edges=       520 correct=True
+n=  1000 m=   1997 deg= 2.00 cp=  10 updates=  8 seed= 17 graph_traversal      total=    1.842ms nodes=      9184 edges=     14992 correct=True
+n=  1000 m=   1997 deg= 2.00 cp=  10 updates=  8 seed= 17 bitmap_recompute     total=    1.675ms nodes=      8000 edges=     15976 correct=True
+n=  1000 m=   1997 deg= 2.00 cp=  10 updates=  8 seed= 17 gbsr_incremental     total=    0.098ms nodes=       355 edges=       686 correct=True
+n=  1000 m=   1997 deg= 2.00 cp= 100 updates=  8 seed=  7 graph_traversal      total=   10.804ms nodes=     44416 edges=     65064 correct=True
+n=  1000 m=   1997 deg= 2.00 cp= 100 updates=  8 seed=  7 bitmap_recompute     total=    1.461ms nodes=      8000 edges=     15976 correct=True
+n=  1000 m=   1997 deg= 2.00 cp= 100 updates=  8 seed=  7 gbsr_incremental     total=    0.115ms nodes=       272 edges=       520 correct=True
+n=  1000 m=   1997 deg= 2.00 cp= 100 updates=  8 seed= 17 graph_traversal      total=   10.099ms nodes=     42744 edges=     59240 correct=True
+n=  1000 m=   1997 deg= 2.00 cp= 100 updates=  8 seed= 17 bitmap_recompute     total=    1.420ms nodes=      8000 edges=     15976 correct=True
+n=  1000 m=   1997 deg= 2.00 cp= 100 updates=  8 seed= 17 gbsr_incremental     total=    0.134ms nodes=       355 edges=       686 correct=True
+n=  1000 m=   7964 deg= 7.96 cp=  10 updates=  8 seed=  7 graph_traversal      total=    4.841ms nodes=     16200 edges=     64240 correct=True
+n=  1000 m=   7964 deg= 7.96 cp=  10 updates=  8 seed=  7 bitmap_recompute     total=    4.690ms nodes=      8000 edges=     63712 correct=True
+n=  1000 m=   7964 deg= 7.96 cp=  10 updates=  8 seed=  7 gbsr_incremental     total=    0.673ms nodes=      1214 edges=      9424 correct=True
+n=  1000 m=   7964 deg= 7.96 cp=  10 updates=  8 seed= 17 graph_traversal      total=    5.120ms nodes=     16984 edges=     65976 correct=True
+n=  1000 m=   7964 deg= 7.96 cp=  10 updates=  8 seed= 17 bitmap_recompute     total=    5.205ms nodes=      8000 edges=     63712 correct=True
+n=  1000 m=   7964 deg= 7.96 cp=  10 updates=  8 seed= 17 gbsr_incremental     total=    1.253ms nodes=      2510 edges=     19792 correct=True
+n=  1000 m=   7964 deg= 7.96 cp= 100 updates=  8 seed=  7 graph_traversal      total=   90.748ms nodes=    242256 edges=   1102920 correct=True
+n=  1000 m=   7964 deg= 7.96 cp= 100 updates=  8 seed=  7 bitmap_recompute     total=    7.964ms nodes=      8000 edges=     63712 correct=True
+n=  1000 m=   7964 deg= 7.96 cp= 100 updates=  8 seed=  7 gbsr_incremental     total=    0.802ms nodes=      1214 edges=      9424 correct=True
+n=  1000 m=   7964 deg= 7.96 cp= 100 updates=  8 seed= 17 graph_traversal      total=   73.341ms nodes=    222736 edges=    917072 correct=True
+n=  1000 m=   7964 deg= 7.96 cp= 100 updates=  8 seed= 17 bitmap_recompute     total=    4.775ms nodes=      8000 edges=     63712 correct=True
+n=  1000 m=   7964 deg= 7.96 cp= 100 updates=  8 seed= 17 gbsr_incremental     total=    1.246ms nodes=      2510 edges=     19792 correct=True
+n=  5000 m=   9997 deg= 2.00 cp=  10 updates=  8 seed=  7 graph_traversal      total=    0.398ms nodes=      2248 edges=      2184 correct=True
+n=  5000 m=   9997 deg= 2.00 cp=  10 updates=  8 seed=  7 bitmap_recompute     total=    7.564ms nodes=     40000 edges=     79976 correct=True
+n=  5000 m=   9997 deg= 2.00 cp=  10 updates=  8 seed=  7 gbsr_incremental     total=    0.216ms nodes=       667 edges=      1310 correct=True
+n=  5000 m=   9997 deg= 2.00 cp=  10 updates=  8 seed= 17 graph_traversal      total=    3.536ms nodes=     15040 edges=     16616 correct=True
+n=  5000 m=   9997 deg= 2.00 cp=  10 updates=  8 seed= 17 bitmap_recompute     total=    7.632ms nodes=     40000 edges=     79976 correct=True
+n=  5000 m=   9997 deg= 2.00 cp=  10 updates=  8 seed= 17 gbsr_incremental     total=    0.274ms nodes=      1027 edges=      2030 correct=True
+n=  5000 m=   9997 deg= 2.00 cp= 100 updates=  8 seed=  7 graph_traversal      total=   15.300ms nodes=     65480 edges=     72424 correct=True
+n=  5000 m=   9997 deg= 2.00 cp= 100 updates=  8 seed=  7 bitmap_recompute     total=    8.401ms nodes=     40000 edges=     79976 correct=True
+n=  5000 m=   9997 deg= 2.00 cp= 100 updates=  8 seed=  7 gbsr_incremental     total=    0.261ms nodes=       667 edges=      1310 correct=True
+n=  5000 m=   9997 deg= 2.00 cp= 100 updates=  8 seed= 17 graph_traversal      total=   48.165ms nodes=    197280 edges=    314480 correct=True
+n=  5000 m=   9997 deg= 2.00 cp= 100 updates=  8 seed= 17 bitmap_recompute     total=    8.126ms nodes=     40000 edges=     79976 correct=True
+n=  5000 m=   9997 deg= 2.00 cp= 100 updates=  8 seed= 17 gbsr_incremental     total=    0.319ms nodes=      1027 edges=      2030 correct=True
+n=  5000 m=  39964 deg= 7.99 cp=  10 updates=  8 seed=  7 graph_traversal      total=   43.202ms nodes=     99392 edges=    439096 correct=True
+n=  5000 m=  39964 deg= 7.99 cp=  10 updates=  8 seed=  7 bitmap_recompute     total=   24.851ms nodes=     40000 edges=    319712 correct=True
+n=  5000 m=  39964 deg= 7.99 cp=  10 updates=  8 seed=  7 gbsr_incremental     total=    3.245ms nodes=      6492 edges=     51648 correct=True
+n=  5000 m=  39964 deg= 7.99 cp=  10 updates=  8 seed= 17 graph_traversal      total=   43.482ms nodes=    125696 edges=    427112 correct=True
+n=  5000 m=  39964 deg= 7.99 cp=  10 updates=  8 seed= 17 bitmap_recompute     total=   25.218ms nodes=     40000 edges=    319712 correct=True
+n=  5000 m=  39964 deg= 7.99 cp=  10 updates=  8 seed= 17 gbsr_incremental     total=    5.713ms nodes=     10911 edges=     87000 correct=True
+n=  5000 m=  39964 deg= 7.99 cp= 100 updates=  8 seed=  7 graph_traversal      total=  437.437ms nodes=   1130896 edges=   4950328 correct=True
+n=  5000 m=  39964 deg= 7.99 cp= 100 updates=  8 seed=  7 bitmap_recompute     total=   26.976ms nodes=     40000 edges=    319712 correct=True
+n=  5000 m=  39964 deg= 7.99 cp= 100 updates=  8 seed=  7 gbsr_incremental     total=    3.878ms nodes=      6492 edges=     51648 correct=True
+n=  5000 m=  39964 deg= 7.99 cp= 100 updates=  8 seed= 17 graph_traversal      total=  301.768ms nodes=    863904 edges=   3140224 correct=True
+n=  5000 m=  39964 deg= 7.99 cp= 100 updates=  8 seed= 17 bitmap_recompute     total=   27.091ms nodes=     40000 edges=    319712 correct=True
+n=  5000 m=  39964 deg= 7.99 cp= 100 updates=  8 seed= 17 gbsr_incremental     total=    7.004ms nodes=     10911 edges=     87000 correct=True
+
+Wrote results/phase2a_dynamic_updates.csv

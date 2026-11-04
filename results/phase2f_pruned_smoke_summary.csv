@@ -1,0 +1,3 @@
+n,degree,checkpoints,operation,full_median_ms,legacy_incremental_median_ms,support_count_median_ms,support_count_speedup_vs_full,support_count_speedup_vs_legacy
+1000,2,10,add,2.309332,0.134084,0.155833,14.819274479731508,0.860433926061874
+1000,2,10,remove,1.8638350000000001,0.29375100000000004,0.13287700000000002,14.02676911730397,2.2106986160133055

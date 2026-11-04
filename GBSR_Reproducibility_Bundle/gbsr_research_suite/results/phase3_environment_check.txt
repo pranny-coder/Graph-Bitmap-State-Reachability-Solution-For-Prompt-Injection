@@ -1,0 +1,4 @@
+Phase 3 environment check (this execution environment, not the user Mac):
+ollama CLI not installed/in PATH
+Ollama endpoint unavailable at localhost:11434
+AgentDojo Python package installed: False
